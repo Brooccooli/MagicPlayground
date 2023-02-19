@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class SpellSettings : MonoBehaviour
 {
+    public string Name = "None";
     public bool RapidFire = true;
 }
