@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField] private float _boostSpeed = 5;
+    
     private Rigidbody _body;
     private float _speed = 0;
     private float _acceleration = 100f;
@@ -18,6 +20,11 @@ public class Movement : MonoBehaviour
     }
 
     void FixedUpdate()
+    {
+        _controls();
+    }
+
+    private void _controls()
     {
         // Forward and backwards
         if (Input.GetKey(KeyCode.W))
@@ -54,6 +61,13 @@ public class Movement : MonoBehaviour
         else if (Input.GetKey(KeyCode.LeftControl))
         {
             _body.AddForce(-transform.up * Mathf.Abs(_speed));
+        }
+        
+        // Boost
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            _body.AddForce(transform.forward * _boostSpeed, ForceMode.Impulse);
+            print("boost");
         }
 
         _lastFrameVelocity = _body.velocity;

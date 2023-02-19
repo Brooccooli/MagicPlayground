@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 819164215117973788}
   - component: {fileID: 7567567582318853822}
   - component: {fileID: 2268432606271866079}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Electricity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,13 +224,13 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 1
-      minColor: {r: 1, g: 1, b: 1, a: 1}
+      minMaxState: 2
+      minColor: {r: 0.5424528, g: 1, b: 0.94772416, a: 1}
       maxColor: {r: 1, g: 0.913718, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 0.97164285, b: 0, a: 0.67058825}
-        key1: {r: 0.9731416, g: 1, b: 0.759434, a: 1}
+        key1: {r: 0.40606087, g: 0.6886792, b: 0.64206177, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -4913,4 +4913,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15be7e72889af4547b4f2fdde4a910ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: None
   RapidFire: 1

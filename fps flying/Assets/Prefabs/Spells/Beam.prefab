@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6356770601926461211}
   - component: {fileID: 8377324377803032365}
   - component: {fileID: 2473349283500396374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4913,4 +4913,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15be7e72889af4547b4f2fdde4a910ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: None
   RapidFire: 0
